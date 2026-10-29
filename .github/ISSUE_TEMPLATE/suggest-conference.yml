@@ -1,0 +1,34 @@
+name: Suggest a conference
+description: Add a missing conference or correct a date
+title: "[Conference] "
+labels: ["data"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Conference name and year
+      placeholder: e.g. DH Benelux 2027
+    validations:
+      required: true
+  - type: input
+    id: cfp
+    attributes:
+      label: Link to the call for papers or important-dates page
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is this?
+      options:
+        - A missing conference
+        - A wrong or outdated date
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Deadlines, time zone, venue, topic area, or anything else that helps.
