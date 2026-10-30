@@ -6,7 +6,7 @@
 <title>DH conferences dates</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#F5F6F9; --surface:#FFFFFF; --ink:#2B1B3D; --muted:#636D85; --faint:#8D95A8; --line:#E2E5EC; --soft:#F0F2F6;
@@ -168,6 +168,13 @@ header.top{padding:32px 130px 6px 24px}
 .suggest p{margin:0;color:var(--muted);max-width:56ch}
 .suggest-acts{display:flex;gap:8px;flex-wrap:wrap}
 @media (max-width:700px){ header.top{padding:58px 14px 6px} .fork{width:96px;height:96px} .fork::before{top:18px;right:-58px;font-size:10.5px;line-height:24px} }
+.sig{position:relative;display:block;width:86px;height:56px;margin-left:auto;text-decoration:none;flex:none}
+.sig .plane{position:absolute;inset:0;background:#D39A2E;clip-path:polygon(0 0,100% 16%,100% 100%,0 82%);transition:background .15s}
+.sig .word{position:absolute;left:11px;top:21px;font:700 14px/1 "Instrument Sans",system-ui,sans-serif;letter-spacing:-.02em;color:#151417;white-space:nowrap;transition:color .15s}
+.sig .word span{color:#1B2A4A;transition:color .15s}
+.sig:hover .plane,.sig:focus-visible .plane{background:#9E2A2B}
+.sig:hover .word,.sig:focus-visible .word{color:#F7F4EB}
+.sig:hover .word span,.sig:focus-visible .word span{color:#D39A2E}
 .support{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px;padding-top:18px;border-top:1px solid var(--line);color:var(--ink);font-size:14px}
 footer{padding:26px 0 44px;color:var(--muted);font-size:13px}
 footer p{max-width:78ch;margin:6px 0}
@@ -261,7 +268,7 @@ footer p{max-width:78ch;margin:6px 0}
   <p>Dates come from each conference's official call for papers. <b>Announced</b> means published on the official site. <b>Provisional</b> means marked tentative or taken from a third-party listing. <b>Estimated</b> means the call isn't out yet and the date follows last year's pattern. Always check the conference website before planning around a date.</p>
   <p>Deadlines without a stated time zone are treated as 23:59 Anywhere on Earth (UTC−12). Stars are saved in this browser.</p>
 
-  <div class="support"><span>Find this useful?</span><a class="coffee" href="https://buymeacoffee.com/sumeghp" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2.5v2.5M11.5 2.5v2.5"/></svg>Buy me a coffee</a></div>
+  <div class="support"><span>Find this useful?</span><a class="coffee" href="https://buymeacoffee.com/sumeghp" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2.5v2.5M11.5 2.5v2.5"/></svg>Buy me a coffee</a><a class="sig" href="https://sumeghp.github.io/" target="_blank" rel="noopener" aria-label="Homepage"><span class="plane" aria-hidden="true"></span><span class="word" aria-hidden="true">sumegh p<span>.</span></span></a></div>
 </footer>
 <div class="toast" id="toast" role="status"></div>
 
