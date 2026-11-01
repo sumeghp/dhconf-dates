@@ -1,7 +1,7 @@
 // Conference data. Each deadline: date (YYYY-MM-DD), time (HH:MM, default 23:59), tz ('AoE' | 'UTC' | IANA zone),
 // status: 'announced' (official site) | 'provisional' (tentative / third-party listing) | 'estimated' (from last year's pattern)
-// Last checked: 30 Oct 2026
-window.LAST_CHECKED = "2026-10-30";
+// Last checked: 1 Nov 2026
+window.LAST_CHECKED = "2026-11-01";
 window.TOPICS = {
   gen:   { label: "Digital humanities (general)",   color: "#7A3E9D" },
   comp:  { label: "Computational humanities",       color: "#2F6FB0" },
@@ -13,7 +13,7 @@ window.CONFERENCES = [
   {
     id: "dh27", country: "Ireland", start: "2027-06-28", short: "DH", year: 2027, name: "ADHO Digital Humanities Conference",
     topics: ["gen"], region: "Europe", place: "University of Galway, Ireland", dates: "28 Jun – 3 Jul 2027",
-    url: "https://adho.org/",
+    url: "https://dh2027.adho.org/cfp/",
     note: "The main annual conference of the Alliance of Digital Humanities Organizations. Submissions via ConfTool.",
     deadlines: [ { label: "Papers, posters, panels, workshops", date: "2026-11-20", status: "announced" } ]
   },
@@ -70,6 +70,30 @@ window.CONFERENCES = [
     topics: ["lib"], region: "TBA", place: "Venue TBA", dates: "Autumn 2027",
     url: "https://jcdl.org/",
     deadlines: [ { label: "Full & short papers", date: "2027-06-30", status: "estimated", note: "JCDL 2026 papers closed 30 Jun 2026; posters and demos a month later." } ]
+  },
+  {
+    id: "dhd28", country: "TBA", start: "2028-03-01", short: "DHd", year: 2028, name: "Jahrestagung Digital Humanities im deutschsprachigen Raum",
+    topics: ["gen"], region: "Europe", place: "Venue TBA (German-speaking countries)", dates: "Spring 2028",
+    url: "https://dig-hum.de/",
+    deadlines: [ { label: "Papers, panels, posters, workshops", date: "2027-08-01", tz: "Europe/Berlin", status: "estimated", note: "DHd 2027 closed 1 Aug 2026; DHd calls close in mid-summer." } ]
+  },
+  {
+    id: "chr28", country: "TBA", start: "2028-01-05", short: "CHR", year: 2028, name: "Computational Humanities Research Conference",
+    topics: ["comp"], region: "TBA", place: "Venue TBA", dates: "Winter 2027/28",
+    url: "https://computational-humanities-research.org/",
+    deadlines: [ { label: "Full papers", date: "2027-08-13", status: "estimated", note: "CHR deadlines: 18 Jul 2025 (CHR 2025), 14 Aug 2026 (CHR 2027)." } ]
+  },
+  {
+    id: "dhnb28", country: "TBA", start: "2028-03-06", short: "DHNB", year: 2028, name: "Digital Humanities in the Nordic and Baltic Countries",
+    topics: ["gen"], region: "Europe", place: "Venue TBA (Nordic/Baltic)", dates: "Spring 2028",
+    url: "https://dhnb.eu/",
+    deadlines: [ { label: "All proposals", date: "2027-10-20", status: "estimated", note: "DHNB deadlines: 29 Oct 2025 (DHNB 2026), 16 Oct 2026 (DHNB 2027)." } ]
+  },
+  {
+    id: "caa28", country: "TBA", start: "2028-04-10", short: "CAA", year: 2028, name: "Computer Applications and Quantitative Methods in Archaeology",
+    topics: ["herit", "comp"], region: "TBA", place: "Venue TBA", dates: "Spring 2028",
+    url: "https://caa-international.org/",
+    deadlines: [ { label: "Papers, posters & workshops", date: "2027-10-10", status: "estimated", note: "CAA deadlines: 26 Oct 2025 (CAA 2026), 3 Oct 2026 (CAA 2027)." } ]
   },
   // Recently closed (shown with "Passed")
   {
